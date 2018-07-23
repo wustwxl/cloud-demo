@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cloud-provider-log:war">
+    <output-path>$PROJECT_DIR$/cloud-provider-log/target</output-path>
+    <root id="archive" name="cloud-provider-log-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="cloud-provider-log:war exploded" />
+    </root>
+  </artifact>
+</component>

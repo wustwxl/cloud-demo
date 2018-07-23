@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cloud-provider-file:war">
+    <output-path>$PROJECT_DIR$/cloud-provider-file/target</output-path>
+    <root id="archive" name="cloud-provider-file-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="cloud-provider-file:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cloud-zuul-gateway:war">
+    <output-path>$PROJECT_DIR$/cloud-zuul-gateway/target</output-path>
+    <root id="archive" name="cloud-zuul-gateway-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="cloud-zuul-gateway:war exploded" />
+    </root>
+  </artifact>
+</component>

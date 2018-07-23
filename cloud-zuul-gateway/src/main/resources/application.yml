@@ -1,0 +1,33 @@
+server: 
+  port: 9527
+ 
+spring: 
+  application:
+    name: cloud-zuul-gateway
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: zuul-gateway
+    prefer-ip-address: true 
+
+zuul:
+  #ignored-services: cloud-file             #忽略单个微服务名
+  prefix: /wust                             #服务统一前缀
+  ignored-services: "*"                     #忽略所有微服务名
+  routes:                                   #路由映射 已注册服务名 对应 访问地址
+    file.serviceId: cloud-file              #当注册中心中同一个serviceId有多个服务时,默认使用轮询进行负载均衡
+    file.path: /file-api/**
+
+    user.serviceId: cloud-user
+    user.path: /user-api/**
+
+    log.serviceId: cloud-log
+    log.path: /log-api/**
+
+info:
+  app.name: wxl
+  company.name: com.wust
+
